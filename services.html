@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Master Flow Plumbing</title>
+    <meta name="description" content="Explore expert plumbing services by Master Flow in Gauteng, including geyser repairs, leak detection, drain unblocking, and full commercial installations.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/example.js" defer></script>
+</head>
+<body>
+
+    <!-- Adding a header with the company logo and navigation bar -->
+    <header>
+      <a href="index.html" class="logo">
+        <picture>
+            <source media="(max-width: 480px)" srcset="images/Logo.jpg">
+            <img src="images/Logo.jpg" alt="Master Flow Logo" style="height: 110px; width: auto; vertical-align: middle;">
+        </picture>
+    </a>
+        <nav>
+            <!-- Making the "Services" link active in the navigation bar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Adding a main section to provide information about the company's services and solutions, including commercial plumbing, geyser repair and replacement, leak detection and pipe repair, drain unblocking, bathroom and kitchen fitting, and emergency plumbing services -->
+        <h1 class="section-title">Our Services & Solutions</h1>
+
+        <!-- Service Category Filters -->
+<div class="service-toolbar">
+  <div class="service-search-wrap">
+    <label for="service-search" class="sr-only">Search services</label>
+    <input id="service-search" type="search" placeholder="Search services..." aria-label="Search services">
+  </div>
+
+  <div class="service-sort-wrap">
+    <label for="service-sort">Sort by</label>
+    <select id="service-sort">
+      <option value="title-asc">Name A–Z</option>
+      <option value="title-desc">Name Z–A</option>
+    </select>
+  </div>
+</div>
+
+<div class="service-filters" style="text-align: center; margin-bottom: 2rem;">
+  <button class="filter-btn active" data-filter="all">All Services</button>
+  <button class="filter-btn" data-filter="geyser">Geyser</button>
+  <button class="filter-btn" data-filter="commercial">Commercial</button>
+    <button class="filter-btn" data-filter="pipe-repair">Pipe & Leak</button>
+    <button class="filter-btn" data-filter="drain">Drain</button>
+    <button class="filter-btn" data-filter="water">Water Filtration</button>
+    <button class="filter-btn" data-filter="residents">Residential</button>
+</div>
+
+        <p id="service-results-count" class="service-results-count" role="status" aria-live="polite"></p>
+
+        <div id="service-list" class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+          <div id="service-empty-state" class="service-empty-state" role="status" aria-live="polite" hidden>No matches found</div>
+        </div>
+
+       
+<!-- Master Flow Project Gallery Section -->
+<section class="gallery-section animate-on-scroll" style="margin: 3rem 0; text-align: center;">
+  <h2 class="section-title">Our Work in Action</h2>
+  <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+    
+    <!-- Gallery Item 1 -->
+    <div class="card gallery-item" style="padding: 0.5rem; overflow: hidden; cursor: pointer;">
+      <img src="images/Drain.png" alt="Unclogging a blocked drain" loading="lazy" data-lightbox-src="images/Drain.png" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; display: block;">
+      <p style="margin-top: 0.5rem; font-weight: bold; color: #002D62;">Drain Services</p>
+    </div>
+
+    <!-- Gallery Item 2 -->
+    <div class="card gallery-item" style="padding: 0.5rem; overflow: hidden; cursor: pointer;">
+      <img src="images/Geyser.png" alt="installed wall-mounted geyser with secure bracket fittings and plumbing lines" loading="lazy" data-lightbox-src="images/Geyser.png" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; display: block;">
+      <p style="margin-top: 0.5rem; font-weight: bold; color: #002D62;">Geyser Services</p>
+    </div>
+
+    <!-- Gallery Item 3 -->
+    <div class="card gallery-item" style="padding: 0.5rem; overflow: hidden; cursor: pointer;">
+      <img src="images/pipe-and-leak.png" alt="Fixing a leaky residential water pipe." loading="lazy" data-lightbox-src="images/pipe-and-leak.png" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; display: block;">
+      <p style="margin-top: 0.5rem; font-weight: bold; color: #002D62;">Pipe Services</p>
+    </div>
+
+    <!-- Gallery Item 4 -->
+    <div class="card gallery-item" style="padding: 0.5rem; overflow: hidden; cursor: pointer;">
+      <img src="images/water-filtration.png" alt="Maintenance and repair of a home water filtration system" loading="lazy" data-lightbox-src="images/water-filtration.png" style="width: 100%; height: 200px; object-fit: cover; border-radius: 4px; display: block;">
+      <p style="margin-top: 0.5rem; font-weight: bold; color: #002D62;">Water Filtration Services</p>
+    </div>
+
+  <!-- Gallery Item 5 -->
+    <div class="card gallery-item" style="padding: 0.5rem; overflow: hidden; cursor: pointer;">
+      <img src="images/sinks.png" alt="Bathroom & Kitchen Fitting" loading="lazy" data-lightbox-src="images/sinks.png" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; display: block;">
+      <img src="images/Toilet.png" alt="Bathroom & Kitchen Fitting" loading="lazy" data-lightbox-src="images/Toilet.png" style="width: 100%; height: 150px; object-fit: cover; border-radius: 4px; display: block;">
+      <p style="margin-top: 0.5rem; font-weight: bold; color: #002D62;">Residential Services</p>
+    </div>
+</div>
+</section>
+
+<!-- Lightbox Modal Container -->
+<div id="lightbox-modal" class="lightbox" style="display: none;">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img" id="lightbox-target" src="" alt="Enlarged View">
+</div>
+    </main>
+
+    <!-- Adding a footer with contact information and social media links -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Get in Touch</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 18px; height: 18px; vertical-align: middle;"> Instagram
+                    </a>
+                    <a href="https://wa.me/27860404142" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 18px; height: 18px; vertical-align: middle;"> 086 040 4142
+                        
+
+                        </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                   <li><a href="about.html">About Us</a></li>
+                   <li><a href="services.html">Services & Products</a></li>
+                   <li><a href="contact.html">Our Locations</a></li>
+                </ul>
+            </div>
+   <div class="footer-col">
+    <h4>Emergency Help</h4>
+ <p class="emergency-text">Need urgent plumbing assistance </p>
+    <br>
+    <!-- Adding a button that links to a Google Maps search for plumbers near the user -->
+    <a href="contact.html#map-section" class="btn-primary">FIND OUR LOCATION</a>
+</div>
+        </div>
+        <!-- Adding a footer with contact information and social media links -->
+        <div class="footer-bottom">
+            <p>&copy; The Independent Institute of Education (Pty) Ltd 2026. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

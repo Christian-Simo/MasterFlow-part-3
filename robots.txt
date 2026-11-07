@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://masterflow.co.za/sitemap.xml

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Master Flow Plumbing</title>
+    <meta name="description" content="Get in touch with Master Flow Plumbing for fast response emergency plumbing and expert service consultations across Gauteng.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/example.js" defer></script>
+</head>
+<body>
+
+    <!-- Adding a header with the company logo and navigation bar -->
+    <header>
+       <a href="index.html" class="logo">
+        <picture>
+            <source media="(max-width: 480px)" srcset="images/Logo.jpg">
+            <img src="images/Logo.jpg" alt="Master Flow Logo" style="height: 110px; width: auto; vertical-align: middle;">
+        </picture>
+    </a>
+        <nav>
+            <!-- Making the "Contact Us" link active in the navigation bar -->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Adding a main section to provide contact information for the company's offices in Pretoria and Johannesburg, as well as their 24/7 emergency dispatch services -->
+        <h1 class="section-title">Contact Master Flow</h1>
+
+        <div class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+            <!-- Adding a card to highlight the company's Pretoria office location and contact information -->
+            <div class="card card-content">
+                <h3>Pretoria Head Office</h3>
+                <p>Hatfield, Pretoria<br>Gauteng, South Africa</p>
+                <p><strong>Phone:</strong> 086 040 4142</p>
+            </div>
+
+            <!-- Adding a card to highlight the company's Johannesburg office location and contact information -->
+
+            <div class="card card-content">
+                <h3>Johannesburg Office</h3>
+                <p>Johannesburg Central<br>Gauteng, South Africa</p>
+                <p><strong>Phone:</strong> 072 202 5590</p>
+            </div>
+
+            <!-- Adding a card to highlight the company's 24/7 emergency dispatch services -->
+
+            <div class="card card-content">
+                <h3>24/7 Dispatch</h3>
+                <p>Emergency Line Available 24 Hours a Day, 7 Days a Week.</p>
+                <p><strong>WhatsApp:</strong> 086 040 4142</p>
+            </div>
+        </div>
+    </main>
+
+    <section style="width: 100% !important; max-width: 950px !important; margin: 3rem auto; padding: 2.5rem;" class="card card-content">
+    <h2 style="text-align: center; margin-bottom: 1.5rem; font-size: 2rem;">Send Us a Message</h2>
+    <form id="contactForm">
+        <div style="margin-bottom: 1.5rem;">
+            <label for="contactName" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">Full Name:</label>
+            <input type="text" id="contactName" name="name" required style="width: 100%; padding: 0.9rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+            <label for="contactEmail" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">Email Address:</label>
+            <input type="text" id="contactEmail" name="email" required style="width: 100%; padding: 0.9rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+        </div>
+
+        <!-- Added dropdown for "the type of message being sent" per instructions -->
+        <div style="margin-bottom: 1.5rem;">
+            <label for="messageType" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">Message Type:</label>
+            <select id="messageType" name="messageType" style="width: 100%; padding: 0.9rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px;">
+                <option value="General Enquiry">General Enquiry</option>
+                <option value="Feedback">Feedback / Compliment</option>
+                <option value="Support">Customer Support</option>
+                <option value="Partnership">Partnership / Sponsorship</option>
+            </select>
+        </div>
+
+        <div style="margin-bottom: 1.5rem;">
+            <label for="contactMessage" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 1.1rem;">Your Message:</label>
+            <textarea id="contactMessage" name="message" rows="7" required style="width: 100%; padding: 0.9rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; padding: 1.1rem; font-size: 1.1rem; border: none; cursor: pointer;">SEND MESSAGE</button>
+    </form>
+</section>
+    
+   
+    <!-- Interactive Map Section -->
+  <section id="map-section" class="map-section">
+    <h2>Find Master Flow</h2>
+    <p>Visit our Pretoria Head Office, Johannesburg Office, or check our service areas below.</p>
+    
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115132.86475765668!2d28.1887!3d-25.7479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9561c28c89c447%3A0x44d67e108871bd0!2sHatfield%2C%20Pretoria!5e0!3m2!1sen!2sza!4v1700000000000!5m2!1sen!2sza" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+    <!-- Adding a footer with contact information and social media links -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Get in Touch</h4>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-item">
+                        <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width: 18px; height: 18px; vertical-align: middle;"> Instagram
+                    </a>
+                    <a href="https://wa.me/27860404142" target="_blank" rel="noopener noreferrer" class="whatsapp-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 18px; height: 18px; vertical-align: middle;"> 086 040 4142
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services & Products</a></li>
+                    <li><a href="contact.html">Our Locations</a></li>
+            </div>
+         <div class="footer-col">
+    <h4>Emergency Help</h4>
+  <p class="emergency-text">Need urgent plumbing assistance </p>
+    <br>
+    <!-- Adding a button that links to a Google Maps search for plumbers near the user -->
+   <a href="contact.html#map-section" class="btn-primary">FIND OUR LOCATION</a>
+</div>
+        </div>
+        <!-- Adding a footer with contact information and social media links -->
+        <div class="footer-bottom">
+            <p>&copy; The Independent Institute of Education (Pty) Ltd 2026. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

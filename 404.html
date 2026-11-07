@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Master Flow Plumbing</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1.5rem;
+        }
+
+        .error-card {
+            background-color: #222630;
+            border: 1px solid #333946;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 100%;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: 6rem;
+            font-weight: 800;
+            color: #00d4ff;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+            letter-spacing: -2px;
+        }
+
+        .error-title {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .error-description {
+            color: #a0a6b5;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .redirect-notice {
+            font-size: 0.9rem;
+            color: #8892b0;
+            margin-bottom: 2rem;
+        }
+
+        .redirect-notice span {
+            color: #00d4ff;
+            font-weight: bold;
+        }
+
+        .btn-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.85rem 1.75rem;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .btn-primary {
+            background-color: #00d4ff;
+            color: #121212;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: #8a2be2;
+            border: 2px solid #8a2be2;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="error-card">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">Pipe Leaking Elsewhere!</h2>
+        <p class="error-description">
+            The page you are looking for doesn't exist or has been moved. Let's get you back on track to Master Flow Plumbing's main services.
+        </p>
+        
+        <p class="redirect-notice">
+            Redirecting to home page in <span id="countdown">10</span> seconds...
+        </p>
+
+        <div class="btn-container">
+            <a href="index.html" class="btn btn-primary">Return Home</a>
+            <a href="enquiry.html" class="btn btn-secondary">Book Service</a>
+        </div>
+    </section>
+
+    <script>
+        // Automatic redirection countdown
+        let secondsLeft = 10;
+        const countdownElement = document.getElementById('countdown');
+
+        const timer = setInterval(() => {
+            secondsLeft--;
+            if (countdownElement) {
+                countdownElement.textContent = secondsLeft;
+            }
+            if (secondsLeft <= 0) {
+                clearInterval(timer);
+                window.location.href = "index.html";
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
