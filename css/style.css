@@ -781,3 +781,26 @@ button,
 @keyframes slideInModal {
   to { transform: translateY(0); }
 }
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    border: 1px solid #999 !important; /* Darker border for better visibility */
+    border-radius: 4px;
+    background-color: #ffffff;
+    
+    /* Forces mobile browsers to respect custom borders instead of native OS styling */
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Optional: Add a custom dropdown arrow since appearance: none hides the native one */
+select {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1rem;
+    padding-right: 2.5rem;
+}
