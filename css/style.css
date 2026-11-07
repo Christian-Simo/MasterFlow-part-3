@@ -781,7 +781,6 @@ button,
 @keyframes slideInModal {
   to { transform: translateY(0); }
 }
-
 input, select, textarea {
     width: 100%;
     padding: 0.9rem;
@@ -803,4 +802,82 @@ select {
     background-position: right 1rem center;
     background-size: 1rem;
     padding-right: 2.5rem;
+}
+/* Logo responsive styling */
+.header-logo {
+    height: 110px; /* Full size for desktop */
+    width: auto;
+    max-height: 100%;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+/* Automatically scale down the logo height only on smaller mobile screens so it fits the header */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 50px; /* Shrinks gracefully on mobile to fit the header bar */
+    }
+}
+/* Base Header Layout (Desktop) */
+header {
+    background-color: #0b1c2c;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo img {
+    height: 110px; /* Keeps your logo at full, original size */
+    width: auto;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Mobile App Layout Adaptation */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo on top, navigation underneath */
+        align-items: center;    /* Center everything horizontally */
+        padding: 1.5rem 1rem;
+        gap: 1rem;              /* Spacing between logo and menu */
+    }
+
+    .logo {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stacks nav links vertically or keeps them centered */
+        align-items: center;
+        gap: 0.75rem;           /* Clean spacing between links */
+    }
+}
+
+/* Adds proper vertical and horizontal spacing between mobile filter buttons */
+.service-filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem; /* Controls the space between buttons */
+    padding: 0 1rem;
+}
+
+.service-filters .filter-btn {
+    margin: 0.25rem; /* Ensures independent breathing room */
+    padding: 0.6rem 1rem; /* Gives text enough inner padding so boxes look uniform */
 }
