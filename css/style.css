@@ -816,3 +816,37 @@ input, select, textarea {
     font-weight: 600;   /* Slightly bolder font for extra clarity */
     padding: 0.75rem 1.25rem; /* Adds breathing room so the text doesn't overflow the box */
 }
+/* Specific layout for mobile to match the request */
+@media (max-width: 768px) {
+    header {
+        display: flex; /* Ensure it is a flex container */
+        justify-content: space-between; /* Pushes children (logo and nav) to far edges */
+        align-items: flex-start; /* Aligns them to the top of the dark header bar */
+        padding: 1rem 1.5rem; /* Specific padding for mobile */
+    }
+
+    /* Target the nav container specifically on the right */
+    header nav {
+        margin-left: auto; /* Forces the nav container to stick to the right edge */
+    }
+
+    /* Ensure the navigation list itself is a stack on the right */
+    header nav ul {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-end; /* Align links to the right edge */
+        gap: 0.75rem; /* Create even spacing between items */
+        padding: 0;
+        margin: 0;
+    }
+
+    /* (OPTIONAL) Active State Styling */
+    /* To match the 'active' button style from your image, add a class */
+    header nav ul li.active a {
+        background-color: #00bef1; /* Target blue for active link */
+        color: #0b1c2c; /* Dark text on blue */
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+}
